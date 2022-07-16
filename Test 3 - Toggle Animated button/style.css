@@ -1,0 +1,43 @@
+:root {
+    --bg-global: hsl(0, 0%, 90%);
+    --bg-button: hsl(185, 80%, 60%);
+    --bg-circle: hsl(200, 80%, 20%);
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-global);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    background-color: var(--bg-button);
+    padding: 30px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.tickbox {
+    display: none;
+}
+
+.circle {
+    background-color: var(--bg-circle);
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin-left: 5%;
+    transition: 200ms ease;
+}
+
+.tickbox:checked ~ .circle {
+    margin-left: 50%;
+}
