@@ -1,51 +1,62 @@
-:root{
+:root {
     font-family: 'Franklin Gothic';
     font-size: 12px;
 }
-body{
+
+body {
+    position: relative;
     margin: 0;
 }
 
 /*!--Header--*/
 
-header{
-    background-color: aqua;
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2229;
     display: flex;
-    flex-flow:wrap row ;
+    flex-flow: wrap row;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
     padding: 3rem;
 }
 
-.hItem{
-    background: -webkit-radial-gradient(#525252, #333333) ;
+.hItem {
+    background: -webkit-radial-gradient(#525252, #333333);
     border-radius: 1rem;
     margin: 0.5rem;
     color: white;
     align-items: center;
     justify-content: center;
-    width:fit-content;
+    width: fit-content;
     min-width: 10rem;
     min-height: 3rem;
 }
 
 /*!--Main--*/
 
-main{
+main {
     background-color: salmon;
+    padding-top: 10rem;
     height: fit-content;
-    min-height: 1200px;
-    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+h1 {
+    background-color: #fff8;
 }
 
 /*!--Footer--*/
 
-footer{
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: aqua;
-    /* border: 2px solid blue; border-radius: 8px; */
-    display: flex;
-    flex-flow:wrap row ;
-    justify-content: center;
-    align-items:center ;
-    padding: 20px;
+    display: grid;
+    place-items: center;
 }
