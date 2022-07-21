@@ -1,35 +1,44 @@
-:root{
+:root {
     font-size: 32px;
     font-family: 'Franklin Gothic Medium';
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     background-color: red;
-    width: 100%;
-    height: 15vh;
-    min-height: 100px;
     margin: 0;
     padding: 0;
 }
 
-main{
-    background-color: orange;
+main {
     margin: 0;
     padding: 0;
+}
+
+.homepage{
+    display: grid;
+    
+}
+
+#background {
+    background-image: url('./assets/mainBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 footer {
-
     background-color: yellow;
     margin: 0;
     padding: 0;
 }
 
-h1, h2{
+h1,
+h2 {
     margin: 0;
     padding: 0;
 }
