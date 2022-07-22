@@ -1,5 +1,6 @@
 body {
     background-color: #222;
+    height: 100vh;
     display: grid;
     place-items: center;
 }
@@ -24,7 +25,7 @@ body {
 
 .vignette:hover {
     transform: scale(1.1);
-    box-shadow: #888 0 0 .4rem;
+    box-shadow: #444 0 0 .4rem;
 }
 
 .grid-span-col-2 {
