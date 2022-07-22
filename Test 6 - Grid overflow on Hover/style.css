@@ -18,12 +18,13 @@ body {
     background-color: hsl(var(--rdmHue), 60%, 80%);
     width: 5rem;
     height: 5rem;
+    box-shadow: #fff9 0 0 1rem inset;
     transition: 100ms ease-in-out;
 }
 
 .vignette:hover {
     transform: scale(1.1);
-    box-shadow: #444 0 0 .4rem;
+    box-shadow: #888 0 0 .4rem;
 }
 
 .grid-span-col-2 {
