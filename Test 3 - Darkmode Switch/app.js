@@ -8,7 +8,7 @@
 var darkMode = false;
 
 function changeTheme() {
-    console.log('hey!');
+    console.log("hey!");
     if (!darkMode) {
         document.documentElement.style.setProperty('--bg-global', 'hsl(0, 0%, 20%)');
         document.documentElement.style.setProperty('--bg-button', 'hsl(185, 80%, 80%)');
