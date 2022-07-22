@@ -1,5 +1,4 @@
 const vignettes = document.querySelector('.vignette-grid').querySelectorAll('.vignette')
-// console.log(container)
 // console.log(vignettes)
 
 function getRdmColor() {
@@ -12,3 +11,4 @@ vignettes.forEach(e => {
 
 // const container = document.querySelector('.vignette-grid')
 // const vignettes = container.querySelectorAll('.vignette')
+// console.log(container)
