@@ -24,6 +24,7 @@ body {
 }
 
 .vignette:hover {
+    border-radius: .15rem;
     transform: scale(1.1);
     box-shadow: #444 0 0 .4rem;
 }
