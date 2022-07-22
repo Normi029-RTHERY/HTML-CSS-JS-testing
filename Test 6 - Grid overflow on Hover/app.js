@@ -1,11 +1,14 @@
-const vignettes = document.querySelectorAll('.vignette')
+const vignettes = document.querySelector('.vignette-grid').querySelectorAll('.vignette')
+// console.log(container)
+// console.log(vignettes)
 
 function getRdmColor() {
-    let rdmColor = Math.floor(Math.random() * 361);
-    console.log(rdmColor);
-    return rdmColor;
+    return Math.floor(Math.random() * 361)
 }
 
 vignettes.forEach(e => {
-    e.style.var(--rdmHue) = getRdmColor()
+    e.style.setProperty('--rdmHue', getRdmColor())
 })
+
+// const container = document.querySelector('.vignette-grid')
+// const vignettes = container.querySelectorAll('.vignette')
