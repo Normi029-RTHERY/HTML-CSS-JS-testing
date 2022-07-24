@@ -9,6 +9,8 @@ body {
 }
 
 header {
+    position: fixed;
+    width: 100%;
     background-color: red;
     margin: 0;
     padding: 0;
@@ -32,6 +34,9 @@ main {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: yellow;
     margin: 0;
     padding: 0;
