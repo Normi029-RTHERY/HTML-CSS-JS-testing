@@ -1,12 +1,16 @@
 :root {
-    font-size: 32px;
+    font-size: 16px;
     font-family: 'Franklin Gothic Medium';
 }
 
 body {
+    position: relative;
     margin: 0;
     padding: 0;
 }
+
+
+/*!--Header--*/
 
 header {
     position: fixed;
@@ -16,34 +20,40 @@ header {
     padding: 0;
 }
 
+
+/*!--Main--*/
+
 main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: radial-gradient(hsl(0, 0%, 15%), hsl(0, 0%, 17%));
+}
+
+.content {
+    padding: 3em;
+    width: 80%;
+    height: 80vh;
+    background-color: hsl(0, 0%, 20%);
+    box-shadow: 0em 0em 2.5em rgba(0, 0, 0, .3);
+}
+
+p {
     margin: 0;
-    padding: 0;
 }
 
-.homepage{
-    display: grid;
-    
-}
-
-#background {
-    background-image: url('./assets/mainBackground.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
+/*!--Footer--*/
 
 footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
-    background-color: yellow;
+    width: 100vw;
+    background-color: hsla(0, 0%, 100%, 0.5);
     margin: 0;
     padding: 0;
 }
 
-h1,
-h2 {
-    margin: 0;
-    padding: 0;
+.footer_links {
+    padding: 1em;
 }
