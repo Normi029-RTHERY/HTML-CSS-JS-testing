@@ -1,12 +1,58 @@
+@font-face {
+    font-family: 'LemonMilk';
+    src: url(./assets/fonts/lemon_milk/LEMONMILK-Regular.otf);
+    font-weight: normal;
+}
+
 :root {
     font-size: 16px;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'LemonMilk';
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    position: relative;
-    margin: 0;
-    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*!--Welcome Page--!*/
+
+.welcomebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to left, rgb(240, 0, 140), rgb(240, 140, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#tickbox {
+    display: none;
+}
+
+#tickbox:checked~ :is(h1, p) {
+    font-size: 10vw;
+    opacity: 0;
+    transition: 150ms ease-in;
 }
 
 
