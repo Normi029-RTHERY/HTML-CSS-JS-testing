@@ -1,3 +1,4 @@
-openSite(){
-    document.documentElement.style.setProperty('--bg-global', 'hsl(0, 0%, 20%)');
+function openSite() {
+    console.log('hey')
+    document.getElementById('main').setAttribute('style', 'display: flex');
 }

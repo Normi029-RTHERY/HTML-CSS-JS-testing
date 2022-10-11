@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: black;
+
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -34,10 +34,21 @@ body {
 /*!--Welcome Page--!*/
 
 .welcomebox {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    background: radial-gradient(bisque, bisque);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcometext {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     background: linear-gradient(to left, rgb(240, 0, 140), rgb(240, 140, 0));
     background-clip: text;
@@ -45,16 +56,15 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-#tickbox {
+.welcometickbox {
     display: none;
 }
 
-#tickbox:checked~ :is(h1, p) {
-    font-size: 10vw;
+.welcometickbox:checked~ :is(h1, p) {
+    font-size: 10em;
     opacity: 0;
     transition: 150ms ease-in;
 }
-
 
 /*!--Header--*/
 
