@@ -27,7 +27,7 @@
 
 body {
     position: relative;
-    background: bisque;
+    background: #222;
 }
 
 /*!--Welcome Page--!*/
@@ -48,10 +48,11 @@ body {
 .textbox {
     width: fit-content;
     text-align: center;
-    background: linear-gradient(to left, rgb(240, 0, 140), rgb(240, 140, 0));
+    background: linear-gradient(to left, rgb(140, 0, 240), rgb(0, 140, 240));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    overflow: hidden;
 }
 
 /*!--Header--*/
@@ -79,7 +80,7 @@ main {
     justify-content: center;
     min-height: 100vh;
     clip-path: circle(0% at 50% 50%);
-    background: radial-gradient(hsl(0, 0%, 15%), hsl(0, 0%, 17%));
+    background: #111;
 }
 
 

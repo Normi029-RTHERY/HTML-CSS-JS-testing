@@ -22,7 +22,7 @@ body {
 
 .vignette {
     --rdmHue: 0;
-    background-color: hsl(var(--rdmHue), 60%, 80%);
+    background-color: hsl(var(--rdmHue), 40%, 60%);
     width: 5rem;
     height: 5rem;
     box-shadow: #fff9 0 0 1rem inset;
