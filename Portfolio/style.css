@@ -56,14 +56,26 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.welcometext :is(h1, p) {
+    opacity: 1;
+    transition: opacity 0.15s;
+    -webkit-transition: opacity 0.15s;
+}
+
 .welcometickbox {
     display: none;
+
 }
 
 .welcometickbox:checked~ :is(h1, p) {
     font-size: 10em;
     opacity: 0;
-    transition: 150ms ease-in;
+}
+
+h1:hover{
+    opacity: 0;
+    transition: opacity 150ms;
+    -webkit-transition: opacity 0.15s;
 }
 
 /*!--Header--*/
