@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'LemonMilk';
+    src: url(./assets/fonts/lemon_milk/LEMONMILK-Regular.otf);
+    font-weight: normal;
+}
+
+:root {
+    font-size: 16px;
+    font-family: 'LemonMilk';
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background: bisque;
+}
+
+.welcomepage {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.welcometickbox {
+    display: none;
+}
+
+.textbox {
+    width: fit-content;
+    text-align: center;
+    background: linear-gradient(to left, rgb(240, 0, 140), rgb(240, 140, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes openingAnimation {
+    0% {
+        clip-path: circle(0% at 50% 50%);
+    }
+
+    100% {
+        clip-path: circle(100% at 50% 50%);
+    }
+}
+
+main {
+    background-color: gray;
+    height: 100vh;
+    clip-path: circle(0% at 50% 50%);
+    /* animation: openingAnimation 350ms ease-in; */
+}

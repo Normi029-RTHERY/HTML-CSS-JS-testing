@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'LemonMilk';
+    src: url(./assets/fonts/lemon_milk/LEMONMILK-Regular.otf);
+    font-weight: normal;
+}
+
+:root {
+    font-size: 10vw;
+    font-family: 'LemonMilk';
+}
+
+.tbn-grid{
+
+}
+
+.thumbnail{
+
+}

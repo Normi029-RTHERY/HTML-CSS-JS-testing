@@ -11,13 +11,6 @@
     font-family: 'LemonMilk';
 }
 
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-}
-
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -38,9 +31,8 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
 }
 
 .welcometickbox {
@@ -93,8 +85,6 @@ footer {
     bottom: 0;
     width: 100vw;
     background-color: hsla(0, 0%, 100%, 0.5);
-    margin: 0;
-    padding: 0;
 }
 
 .footer_links {
