@@ -16,16 +16,25 @@
     font-family: 'LemonMilk';
 }
 
-.tbn-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 0;
+.tbn-grid-container {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
 }
 
-.thumbnail{
-    width: 20vw;
-    overflow: hidden;
+.tbn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 15px;
+}
+
+.thumbnail {
     aspect-ratio: 1/1;
-        
+    background-position: center;
+    background-size: cover;
+    transition: 100ms ease-in-out;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
 }
