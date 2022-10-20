@@ -10,5 +10,6 @@ Thumbs.db
 # ignore rep
 **/nodejs
 **/z_*
-/.vscode
+**/.vscode
+**/Portfolio
 
