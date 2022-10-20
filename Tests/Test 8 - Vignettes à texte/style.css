@@ -16,18 +16,15 @@
     font-family: 'LemonMilk';
 }
 
-body {
-    display: flex;
-    justify-content: center;
-}
-
 .tbn-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-rows: 5;
     gap: 15px;
 }
 
 .thumbnail {
+    position: relative;
     aspect-ratio: 1/1;
     background-position: center;
     background-size: cover;
@@ -38,9 +35,12 @@ body {
     transform: scale(1.05);
 }
 
-.tbn-label {
-    width: 100%;
-    height: min-content;
+.tbn-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 0;
+    transform: rotate(90deg);
 }
 
 .tbn-label-gradient {
