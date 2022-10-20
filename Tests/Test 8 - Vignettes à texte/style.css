@@ -16,6 +16,8 @@
     font-family: 'LemonMilk';
 }
 
+
+
 .tbn-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -24,7 +26,7 @@
 }
 
 .thumbnail {
-    position: relative;
+    /* position: relative; */
     aspect-ratio: 1/1;
     background-position: center;
     background-size: cover;
@@ -35,13 +37,12 @@
     transform: scale(1.05);
 }
 
-.tbn-text {
+/* .tbn-text {
     position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: 0;
-    transform: rotate(90deg);
-}
+    margin-top: 100%;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+} */
 
 .tbn-label-gradient {
     width: 100%;
@@ -50,14 +51,22 @@
     content: " ";
 }
 
-.tbn-anim::after {
-    content: "Anim";
+/*! Galery Thumbnail Labels !*/
+
+.tbn-anim {
+    background-color: black;
+    -webkit-mask: url(./assets/svg/tbn-labels/anim.svg) no-repeat center;
+    mask: url(./assets/svg/tbn-labels/anim.svg) no-repeat center;
 }
 
-.tbn-mapping::after {
-    content: "Mapping";
+.tbn-mapping{
+    background-color: black;
+    -webkit-mask: url(./assets/svg/tbn-labels/anim.svg) no-repeat center;
+    mask: url(./assets/svg/tbn-labels/anim.svg) no-repeat center;
 }
 
-.tbn-photo::after {
-    content: "Photo";
+.tbn-photo{
+    background-color: black;
+    -webkit-mask: url(./assets/svg/tbn-labels/anim.svg) no-repeat center;
+    mask: url(./assets/svg/tbn-labels/anim.svg) no-repeat center;
 }
