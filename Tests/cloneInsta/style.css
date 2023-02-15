@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-weight: 16px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.navbar {
+    background-color: blue;
+    position: fixed;
+    left: 0px;
+    min-width: 13rem;
+    width: 20vw;
+    height: 100%;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+.nav-list {
+    background-color: cornflowerblue;
+    display: grid;
+    grid-template-rows: 5rem;
+}
+
+.nav-item {
+    padding: 0.5rem;
+    display: list-item block;
+}
+
+main {
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: fit-content;
+    margin: 2rem;
+}
+
+.centerbox {
+    background-color: brown;
+    position: relative;
+    padding: 1rem;
+    height: 100%;
+    width: fit-content;
+}
+
+.stories {
+    background-color: yellowgreen;
+    width: auto;
+    height: 5rem;
+    padding: 0.3rem;
+}
+
+.feed {
+    background-color: steelblue;
+    padding: 0.3rem;
+    width: fit-content;
+}
+
+.post {
+    background-color: antiquewhite;
+    aspect-ratio: 4/4.5;
+    width: 50vw;
+    max-width: 28rem;
+    margin-top: 2.5rem;
+}
+
+.leftbox {
+    background-color: salmon;
+    position: absolute;
+    height: 25rem;
+    width: 20rem;
+    margin-left: 60%;
+}
