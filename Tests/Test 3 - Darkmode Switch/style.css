@@ -38,6 +38,6 @@ body {
     transition: 200ms ease;
 }
 
-.tickbox:checked ~ .circle {
+.tickbox:checked~.circle {
     margin-left: 50%;
 }
