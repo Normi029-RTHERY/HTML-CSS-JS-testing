@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <video id="my-video" autoplay>
+        <source src="./videoplayback.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        var myVideo = document.getElementById("my-video");
+
+        if (myVideo.paused) {
+            var message = document.createElement('div');
+            message.innerHTML = 'Autoplay is blocked. Click <a href="#" onclick="showNotification()">here</a> to enable.';
+            document.body.appendChild(message);
+        }
+
+        function showNotification() {
+            Notification.requestPermission().then(function (permission) {
+                if (permission === 'granted') {
+                    var notification = new Notification('Allow autoplay', {
+                        body: 'Click here to enable autoplay on this website',
+                        requireInteraction: true
+                    });
+                    notification.onclick = function () {
+                        myVideo.play();
+                        notification.close();
+                    }
+                } else {
+                    console.log('Notification permission denied');
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

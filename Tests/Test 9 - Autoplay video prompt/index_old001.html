@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <video id="my-video">
+        <source src="./videoplayback.mp4" type="video/mp4">
+    </video>
+
+    <button onclick="playVideo()">Play video</button>
+
+    <script>
+        function playVideo() {
+            var myVideo = document.getElementById("my-video");
+            myVideo.play().catch(function (error) {
+                if (error.name === 'NotAllowedError') {
+                    myVideo.requestAutoplay().then(function () {
+                        myVideo.play();
+                    }).catch(function (error) {
+                        console.log('Autoplay not allowed', error);
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
